@@ -123,7 +123,7 @@
 		overflow: visible;
 		
 		//노드 연결 속성3; 페이지 연결 넘어가는 방식에 대한 설정
-		//노드 연결 
+		//노드 연결 애니메이션 스타일 (우리는 애니메
 		--web-animation: fadein undefineds undefined;
 		--web-action-type: view;
 		--web-action-target: n_1920__2;
@@ -927,6 +927,8 @@
 		cursor: pointer;
 	}
 }
+
+//xd 기준 웹 1920-4 페이지에 대한 기본 설정
 @media (min-width: 0px) {
 	.mediaViewInfo {
 		--web-view-name: 웹 1920 – 4;
@@ -958,6 +960,8 @@
 	
 	
 	}
+	
+
 	#n__7__1 {
 		position: absolute;
 		width: 473px;
@@ -967,6 +971,8 @@
 		overflow: visible;
 		padding: 0px;
 	}
+	
+
 	#n_1_b {
 		fill: rgba(228,228,228,1);
 		stroke: rgba(0,0,0,1);
@@ -976,6 +982,8 @@
 		stroke-miterlimit: 4;
 		shape-rendering: auto;
 	}
+	
+	
 	.n_1_b {
 		position: absolute;
 		overflow: visible;
@@ -984,13 +992,26 @@
 		left: 0px;
 		top: 0px;
 	}
+	
+	//현재 The Decent라고 되어있는 글씨의 속성 (아마 지금 수정 중인 파일에서 뽑으면 #the_decent로 뜰거예요)
 	#title {
+		//글씨 위치
 		left: 116px;
 		top: 133px;
+		
+		//글씨 속성1;요소 위치 배치 - position
 		position: absolute;
+		
+		//글씨 속성2;박스보다 내용이 길때 어떻게 처리할 것인가 - overflow (visible: 박스 크기보다 내용이 많아도 다 보여요!)
 		overflow: visible;
+		
+		//글씨박스 크기
 		width: 223px;
+		
+		//글씨 공백 처리 방법
 		white-space: nowrap;
+		
+		//글씨 속성3(정렬/폰트/폰트스타일/폰트굵기/크기/색)
 		text-align: center;
 		font-family: Arial;
 		font-style: normal;
@@ -998,6 +1019,8 @@
 		font-size: 100px;
 		color: rgba(46,82,124,1);
 	}
+	
+	
 	#n_5_b {
 		fill: rgba(196,196,196,1);
 		stroke: rgba(0,0,0,1);
@@ -1015,6 +1038,8 @@
 		left: 116px;
 		top: 328px;
 	}
+	
+	//정보 내용 글씨 속성
 	#asdfasdfasdfas_dfadfa_adsf_asd {
 		left: 1066px;
 		top: 154px;
@@ -1029,6 +1054,8 @@
 		font-size: 50px;
 		color: rgba(112,112,112,1);
 	}
+	
+	//홈버튼 사각형 속성(채우기 색/테두리 색/테두리 두께/테두리 라인 스타일)
 	#n_24 {
 		fill: rgba(168,168,168,1);
 		stroke: rgba(0,0,0,1);
@@ -1038,6 +1065,8 @@
 		stroke-miterlimit: 4;
 		shape-rendering: auto;
 	}
+	
+	//홈버튼 사각형 페이지 연결 속성(홈으로 돌아가기)
 	.n_24 {
 		position: absolute;
 		overflow: visible;
@@ -1058,6 +1087,8 @@
 		top: 917px;
 		overflow: visible;
 	}
+	
+	//#다회차 부분
 	#n_2_cb {
 		fill: rgba(216,216,219,1);
 	}
@@ -1092,6 +1123,8 @@
 		top: 917px;
 		overflow: visible;
 	}
+	
+	//#pick 부분
 	#n_2_ce {
 		fill: rgba(216,216,219,1);
 	}
@@ -1104,6 +1137,7 @@
 		left: 0px;
 		top: 0px;
 	}
+	
 	#Text_cf {
 		left: 51px;
 		top: 8px;
@@ -1119,6 +1153,7 @@
 		color: rgba(42,49,62,1);
 	}
 }
+
 @media (min-width: 0px) {
 	.mediaViewInfo {
 		--web-view-name: 웹 1920 – 5;
