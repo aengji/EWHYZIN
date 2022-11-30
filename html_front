@@ -7,7 +7,7 @@
 <title>웹 1920 – 4</title>
 <style id="applicationStylesheet" type="text/css">
 :root {
-	--web-view-ids: n_1920__1,n_1920__2,n_1920__3,n_1920__4,n_1920__5,n_1920__6;
+	--web-view-ids: n_1920__1,n_1920__2,n_1920__3,n_1920__4,n_1920__5,n_1920__6; 
 	--web-view-name: 웹 1920 – 4;
 	--web-view-id: n_1920__4;
 	--web-scale-to-fit: true;
@@ -36,6 +36,7 @@
 #n_1920__6 {
 	display: none;
 }
+//xd 기준 웹 1920-1 페이지에 대한 기본 설정
 @media (min-width: 0px) {
 	.mediaViewInfo {
 		--web-view-name: 웹 1920 – 1;
@@ -52,7 +53,7 @@
 		box-sizing: border-box;
 		border: none;
 	}
-	#n_1920__1 {
+	#n_1920__1 { 
 		position: absolute;
 		display: block;
 		width: 1920px;
@@ -83,13 +84,25 @@
 	
 	
 	}
-	#player {
+	//웹 1920-1에 있는 player 부분 속성
+	#player { 
+		//player 글씨 위치
 		left: 296px;
 		top: 424px;
+		
+		//player 글씨 속성1;요소 위치 배치 - position
 		position: absolute;
+		
+		//player 글씨 속성2;박스보다 내용이 길때 어떻게 처리할 것인가 - overflow (visible: 박스 크기보다 내용이 많아도 다 보여요!)
 		overflow: visible;
+		
+		//player 글씨 박스 길이
 		width: 554px;
+		
+		//player 글씨 공백 처리 방법
 		white-space: nowrap;
+		
+		//player 글씨 속성3(정렬/폰트/폰트스타일/폰트굵기/크기/색)
 		text-align: center;
 		font-family: Genty Demo;
 		font-style: normal;
@@ -97,19 +110,27 @@
 		font-size: 200px;
 		color: rgba(112,112,112,1);
 	}
+	//player 글씨를 누르면 1920-2페이지로 넘어가는 노드 연결 내용
 	#n__1__1 {
+		//노드 연결 속성1; 요소 위치 배치 - position(일반적으로 left, top..등과 함께 사용해요) 
 		position: absolute;
 		width: 170px;
 		height: 56px;
 		left: 1222px;
 		top: 344px;
+		
+		//노드 연결 속성2; 박스보다 내용이 길 때 어떻게 처리할 것인가 - overflow (visible: 박스 크기보다 내용이 많아도 다 보여요!)
 		overflow: visible;
+		
+		//노드 연결 속성3; 페이지 연결 넘어가는 방식에 대한 설정
+		//노드 연결 
 		--web-animation: fadein undefineds undefined;
 		--web-action-type: view;
 		--web-action-target: n_1920__2;
 		cursor: pointer;
 	}
-	#search {
+	//웹 1920-1에 있는 search 부분 속성(player와 동일합니다)
+	#search { 
 		left: 0px;
 		top: 0px;
 		position: absolute;
@@ -124,6 +145,7 @@
 		color: rgba(112,112,112,1);
 		text-transform: lowercase;
 	}
+	//search 글씨를 누르면 1920-3페이지로 넘어가는 노드 연결 내용(player와 동일합니다)
 	#n__2__1 {
 		position: absolute;
 		width: 278px;
@@ -136,6 +158,7 @@
 		--web-action-target: n_1920__3;
 		cursor: pointer;
 	}
+	//웹 1920-1에 있는 movie note 부분 속성(player와 동일합니다)
 	#movie_note {
 		left: 0px;
 		top: 0px;
@@ -151,6 +174,7 @@
 		color: rgba(112,112,112,1);
 		text-transform: lowercase;
 	}
+	//movie note 글씨를 누르면 1920-6 페이지로 넘어가는 노드 연결 내용(player와 동일합니다)
 	#n__3__1 {
 		position: absolute;
 		width: 275px;
@@ -163,6 +187,7 @@
 		--web-action-target: n_1920__6;
 		cursor: pointer;
 	}
+	
 	#scrap_book {
 		left: 0px;
 		top: 0px;
@@ -178,6 +203,7 @@
 		color: rgba(112,112,112,1);
 		text-transform: lowercase;
 	}
+	//scrap book 글씨를 누르면 1920-5 페이지로 넘어가는 노드 연결 내용(player와 동일합니다)
 	#n__4__1 {
 		position: absolute;
 		width: 186px;
@@ -190,6 +216,7 @@
 		--web-action-target: n_1920__5;
 		cursor: pointer;
 	}
+	//
 	#ranking {
 		left: 0px;
 		top: 0px;
@@ -205,6 +232,7 @@
 		color: rgba(112,112,112,1);
 	}
 }
+//웹 1920-2에 대한 기본 설정
 @media (min-width: 0px) {
 	.mediaViewInfo {
 		--web-view-name: 웹 1920 – 2;
